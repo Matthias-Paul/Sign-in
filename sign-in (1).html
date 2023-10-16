@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>login form</title>
+  
+  
+  <style>
+  body {
+    margin: 0;
+    background-color: lightgray;
+    box-sizing:border-box;
+  }
+  
+    header{
+      background: red;
+      height :45px;
+      text-align: center;
+      position:fixed;
+      width: 100%;
+      padding-top:2%;
+      margin:0;
+      font-weight:700;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      top:0;
+      color: white;
+      
+      
+    }
+    
+    .put{
+      margin-top: 69px;
+      text-align: center;
+      display: block ;
+    }
+    
+    input{
+      height: 40px;
+      width: 85%;
+      border-radius: 20px;
+      margin-bottom: 0px;
+      padding-left: 15px;
+      font-size: 20px;
+      outline-color: red;
+      border:none;
+
+    }
+    #sub{
+      font-size: 30px;
+      font-weight: 600;
+      height: 50px;
+      background-color: red;
+      width: 200px;
+      border-radius: 30px;
+      border: none;
+      margin-top: 10px;
+      color:white;
+      margin-bottom: 5px;
+      
+      
+    }
+    #sub:active{
+    opacity: 0.6;
+    }
+   
+    .down{
+      text-align: center ;
+
+    }
+    .firstName{
+      font-size:25px;
+    }
+    #firstText,#secondText,#thirdText,#fourthText,#fifthText,#sixthText,#seventhText{
+      font-size: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+      margin-left: 35px;
+      margin-top: 5px;
+      color: red;
+      font-family: sans-serif;
+      
+    }
+    #all{
+      display:block;
+    }
+    .mark{
+      font-size: 90px;
+      text-align: center;
+      margin-top: 50%;
+      background-color: white;
+      width: 60%;
+      height: 170px;
+      margin-left: 20%;
+      padding-top: 35px;
+      border-radius: 1000%;
+    }
+    #reply{
+      font-size: 15px;
+      justify-content: center ;
+      margin-left: 8px;
+      color: black;
+    }
+    #another{
+      display :none;
+    }
+     span{
+      font-size: 15px;
+      justify-content: center ;
+      margin-left: 8px;
+      color: black;
+    }
+    #name{
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+  <div id="another">
+    
+    <div class="mark">&#10003</div>
+    <span>Hi,</span><span id="name"></span>
+    <div id="reply">You have successfully sign in,we will get back to you through your email as soon as possible,Thanks. </div>
+    
+  </div>
+  
+  <div id="all"> 
+  <header>
+      <div >SIGN IN</div>
+  </header>
+
+ <div class="put">
+   
+   <input id="firstName" placeholder="First name" type="text">
+   <div id="firstText" ></div>
+   
+      <input id="lastName" placeholder="Last name" type="text">
+      <div id="secondText" > </div>
+      
+   <input id="username" placeholder="Username" type="text">
+   <div id="thirdText" ></div>
+   
+   <input id="email" placeholder="Email" type="email">
+   <div id="fourthText" > </div>
+   
+   
+<input id="phoneNumber" placeholder="Phone number" type="number">
+<div id="fifthText" ></div>
+
+   <input id="password" placeholder="Password" type="password">
+   <div id="sixthText" ></div>
+   
+   <input id="repeatPassword" placeholder="Repeat password" type="password">
+   <div id="seventhText" ></div>
+   
+ </div>
+ 
+<div class="down">
+  <button id="sub" type="submit">SIGN IN</button>
+</div>
+</div>
+
+
+<script src="sign-in.js" ></script>
+</body>
+
+</html>
